@@ -1,0 +1,26 @@
+:root{--navy:#1F3864;--blue:#0070C0;--lblue:#DEEAF6;--orange:#C55A11;--grey:#6B7280;--line:#E2E8F0;}
+html,body,[class*="css"]{font-family:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+#MainMenu,footer,header[data-testid="stHeader"]{visibility:hidden;height:0}
+.block-container{padding-top:1rem;max-width:1250px}
+.lens-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;background:var(--navy);color:#fff;padding:14px 20px;border-radius:12px}
+.lens-header .brand{font-size:1.5rem;font-weight:700;letter-spacing:.2px}
+.lens-header .sub{margin-left:12px;color:#BFD3EA;font-size:.9rem}
+.badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.78rem;font-weight:600;background:var(--lblue);color:var(--navy);border:1px solid #B7CFE8}
+.badge.user{background:#FCE9DC;color:var(--orange);border-color:#F2C6A6}
+.lens-banner{margin:10px 0 16px;padding:8px 14px;border-left:4px solid var(--orange);background:#FFF6EF;color:#7A3A0C;font-weight:600;border-radius:6px;font-size:.92rem}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;box-shadow:0 1px 2px rgba(16,24,40,.04);height:100%}
+.kpi .v{font-size:1.7rem;font-weight:700;color:var(--navy);line-height:1.2}
+.kpi .l{font-size:.8rem;color:var(--grey);text-transform:uppercase;letter-spacing:.4px}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.78rem;font-weight:700;color:#fff}
+.chip.High{background:#D9480F}.chip.Medium{background:#E8A317;color:#3b2a00}.chip.Low{background:#8896A8}
+.legit{background:var(--lblue);border-radius:10px;padding:12px 16px;color:var(--navy)}
+.legit b{color:var(--navy)}
+.reason{font-size:1.15rem;font-weight:600;color:var(--navy);margin:6px 0 12px}
+.diff{background:#FFE8CC;border-radius:4px;padding:0 4px}
+table.cmp{border-collapse:collapse;width:100%;font-size:.9rem}
+table.cmp td,table.cmp th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+table.cmp th{color:var(--grey);font-weight:600;width:22%}
+.lens-footer{margin-top:28px;padding:12px 4px;border-top:1px solid var(--line);color:var(--grey);font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+h1,h2,h3{color:var(--navy)!important}
+[data-testid="stSidebar"]{background:#F3F6FA}
+@media (max-width:640px){.lens-header .brand{font-size:1.2rem}.kpi .v{font-size:1.3rem}.block-container{padding-left:.7rem;padding-right:.7rem}}

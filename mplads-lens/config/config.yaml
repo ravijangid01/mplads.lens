@@ -1,0 +1,17 @@
+# MPLADS-Lens configuration. All thresholds are editable; weights can also be changed live in the sidebar.
+as_of: "2026-10-29"        # reference date for ageing calculations (synthetic default; user data sets its own on the Data page)
+seed: 42
+flag_threshold: 40         # final score at or above this = "flagged"
+severity: {high: 70, medium: 40}
+weights: {cost: 0.30, duplicate: 0.25, stalled: 0.25, agency: 0.10, delay: 0.10}
+# Weights are relative: they are divided by the largest weight, so the heaviest detector alone can reach 100.
+multi_detector_bonus: 10   # added when 2 or more detectors fire (final score capped at 100)
+cost:      {z_threshold: 3.5, min_peer_size: 8, mad_floor: 0.05}
+duplicate: {cosine_min: 0.85, fuzz_min: 90, window_days: 180}
+stalled:   {min_sanction_age_days: 730, min_no_progress_days: 365}
+agency:    {contamination: 0.06, min_works: 20, min_dev_z: 2.5, seed: 42}
+delay:
+  # IMPORTANT: 75 days is an illustrative placeholder. Verify against the current MPLADS Guidelines (2023) before relying on it.
+  sanction_delay_days: 75
+  overrun_factor: 1.25     # completion time must exceed this x the peer 90th percentile
+  percentile: 90

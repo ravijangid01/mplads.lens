@@ -1,0 +1,18 @@
+# Map YOUR file's column names (right) to MPLADS-Lens canonical names (left). Omit columns you do not have.
+amount_unit: rupees        # rupees | lakh | crore  (unit of the amount columns in your file)
+columns:
+  work_id: "Work ID"
+  state: "State"
+  district: "District"
+  work_category: "Sector"
+  work_title: "Work Name"
+  implementing_agency: "Implementing Agency"
+  recommended_date: "Recommended On"
+  sanctioned_date: "Sanctioned On"
+  sanctioned_amount: "Sanctioned Amount"
+  released_amount: "Amount Released"
+  expenditure_amount: "Expenditure"
+  status: "Work Status"
+  last_progress_date: "Last Updated"
+  completion_date: "Completed On"
+  completion_percent: "Physical Progress %"
